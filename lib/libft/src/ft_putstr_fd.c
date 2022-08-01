@@ -6,7 +6,7 @@
 /*   By: pniezen <pniezen@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/25 16:22:21 by pniezen       #+#    #+#                 */
-/*   Updated: 2022/07/29 09:53:19 by pniezen       ########   odam.nl         */
+/*   Updated: 2022/08/01 12:07:39 by pniezen       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,6 @@ void	ft_putstr_fd(char *s, int fd)
 	if (!s)
 		return ;
 	while (s[i])
-	{
-		write(fd, &s[i], 1);
 		i++;
-	}
+	write(fd, s, i);
 }

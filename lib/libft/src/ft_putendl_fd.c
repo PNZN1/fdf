@@ -6,7 +6,7 @@
 /*   By: pniezen <pniezen@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2021/10/25 16:27:50 by pniezen       #+#    #+#                 */
-/*   Updated: 2021/10/25 16:34:35 by pniezen       ########   odam.nl         */
+/*   Updated: 2022/08/01 12:07:31 by pniezen       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ void	ft_putendl_fd(char *s, int fd)
 	if (!s)
 		return ;
 	while (s[i])
-	{
-		write(fd, &s[i], 1);
 		i++;
-	}
+	write(fd, s, i);
 	write(fd, "\n", 1);
 }
