@@ -6,7 +6,7 @@
 #    By: pniezen <pniezen@student.codam.nl>           +#+                      #
 #                                                    +#+                       #
 #    Created: 2022/03/31 08:38:57 by pniezen       #+#    #+#                  #
-#    Updated: 2022/08/01 14:54:20 by pniezen       ########   odam.nl          #
+#    Updated: 2022/08/01 15:23:31 by pniezen       ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,3 +74,4 @@ fclean: clean fcleanlib
 re: fclean all
 
 .PHONY: clean, fclean, re, all
+
